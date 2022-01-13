@@ -22,7 +22,6 @@ document.getElementById("kq1").innerText = "Số lượng phần tử a có tron
 let number = [1,3,5,9,7,5,6,3,2,11]
 let total=0;
 function kiemtrasonguyento(n) {
-    // let n = parseInt(prompt("Xin mời nhập số"));
     let check = true
     for (let i = 2; i <= Math.sqrt(n) ; i++) {
         if(n%i==0){
@@ -40,4 +39,20 @@ for (let x = 0; x < number.length; x++) {
 }
 document.getElementById("kq3").innerText = total;
 
-// Bài 4.
+// Bài 4.Tổng các số nguyên tố nhỏ hơn 500. trong 1 mảng cho sẵn.
+let number1 = [55,87,94,11,17,5,3,601,599,501,521,503];
+let total1 =0;
+for (let i = 0; i < number1.length; i++) {
+    if(kiemtrasonguyento(number1[i])&& number1[i]<500) {
+        total1+=number1[i]
+    }
+}
+document.write(total1 +"<br>");
+// bài 4. Tổng các số nguyên tố nhỏ hơn 500.
+let total2 = 0;
+for (let i = 2; i < 500; i++) {
+    if(kiemtrasonguyento(i)){
+        total2+=i;
+    }
+}
+document.write(total2);
