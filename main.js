@@ -30,7 +30,7 @@ function kiemtrasonguyento(n) {
             break;
         }
     }
-    return true;
+    return check;
     }
 
 for (let x = 0; x < number.length; x++) {
